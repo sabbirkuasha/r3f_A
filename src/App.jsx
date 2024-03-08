@@ -2,7 +2,7 @@ import "./App.css";
 import { Canvas } from "@react-three/fiber";
 import Box from "./components/ThreeComponent/Box";
 import HTMLContent from "./components/ThreeComponent/HTMLContents";
-import { CameraControls } from "@react-three/drei";
+import { CameraControls, Environment } from "@react-three/drei";
 import { FlyingCar } from "./components/ThreeModels/FlyingCar";
 import { Suspense } from "react";
 
@@ -16,6 +16,7 @@ function App() {
             <Suspense fallback={null}>
               <HTMLContent />
               <FlyingCar />
+              <Environment files="/HDR/stone_alley_01k.hdr" />
             </Suspense>
             <ambientLight intensity={Math.PI / 2} />
             <spotLight
