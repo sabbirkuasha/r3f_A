@@ -1,7 +1,8 @@
 # Learning React-three-fiber
 
 1. Landing Page
-   a. GLTF
-   b. Drei Camera Control
-   c. HDR
+   1. GLTF
+   2. Drei Camera Control
+   3. HDR
 2. App.js - React Router
+   1. Navbar
