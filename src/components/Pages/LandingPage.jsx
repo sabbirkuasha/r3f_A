@@ -21,20 +21,16 @@ function LandingPage() {
               <FlyingCar />
               <Environment files="/HDR/stone_alley_01k.hdr" />
             </Suspense>
-            <ambientLight intensity={Math.PI / 2} />
+            <ambientLight intensity={1} />
             <spotLight
               position={[10, 10, 10]}
               angle={0.15}
               penumbra={1}
               decay={0}
-              intensity={Math.PI}
+              intensity={1}
             />
             <CameraControls />
-            <pointLight
-              position={[-10, -10, -10]}
-              decay={0}
-              intensity={Math.PI}
-            />
+            <pointLight position={[-10, -10, -10]} decay={0} intensity={2} />
             <Box position={[-1.2, 0, 0]} color={"hotpink"} />
             <Box position={[1.2, 0, 0]} color={"orange"} />
           </Canvas>
