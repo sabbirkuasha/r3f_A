@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 // import Box from "./components/ThreeComponent/Box";
 import Box from "../../components/ThreeComponent/Box";
-import HTMLContent from "../../components/ThreeComponent/HTMLContents";
+// import HTMLContent from "../../components/ThreeComponent/HTMLContents";
 import { CameraControls, Environment } from "@react-three/drei";
 import { FlyingCar } from "../../components/ThreeModels/FlyingCar";
 import { Suspense } from "react";
@@ -11,10 +11,13 @@ function LandingPage() {
     <>
       <title>Landing | GLTF & HDR</title>
       <main className="px-5">
-        <div className="border-2 h-[700px] my-5 rounded-lg">
+        <h1 className="text-xl uppercase text-center">
+          GLTF, HDR, Perspective Camera
+        </h1>
+        <div className="border-2 h-[700px] my-5 rounded-lg  z-10">
           <Canvas>
             <Suspense fallback={null}>
-              <HTMLContent title="GLTF, HDR, Perspective Camera" />
+              {/* <HTMLContent title="GLTF, HDR, Perspective Camera" /> */}
               <FlyingCar />
               <Environment files="/HDR/stone_alley_01k.hdr" />
             </Suspense>

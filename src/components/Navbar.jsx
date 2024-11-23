@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <div className="navbar bg-slate-800 rounded-lg ">
-        <div className="navbar-start">
-          <div className="dropdown">
+      <div className="navbar bg-slate-800 rounded-lg z-auto">
+        <div className="navbar-start ">
+          <div className="dropdown ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu ring menu-sm dropdown-content mt-3 z-100 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
                 <Link to="/">Home</Link>
@@ -36,8 +36,8 @@ function Navbar() {
           </div>
           <a className="btn btn-ghost text-xl">ReactThree</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center hidden lg:flex ">
+          <ul className="menu menu-horizontal px-1 ">
             <li>
               <Link to="/">Home</Link>
             </li>
