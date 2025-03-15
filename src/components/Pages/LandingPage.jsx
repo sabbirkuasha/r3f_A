@@ -31,8 +31,8 @@ function LandingPage() {
             />
             <CameraControls />
             <pointLight position={[-10, -10, -10]} decay={0} intensity={2} />
-            <Box position={[-1.2, 0, 0]} color={"hotpink"} />
-            <Box position={[1.2, 0, 0]} color={"orange"} />
+            {/* <Box position={[-1.2, 0, 0]} color={"hotpink"} />
+            <Box position={[1.2, 0, 0]} color={"orange"} /> */}
           </Canvas>
         </div>
       </main>
